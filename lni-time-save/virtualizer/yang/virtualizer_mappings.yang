@@ -1,0 +1,35 @@
+module virtualizer_mappings {
+  namespace "urn:5gex:virtualizer_mappings";
+  prefix "virtualizer_mappings";
+
+  organization "ETH";
+  contact "Robert Szabo <robert.szabo@ericsson.com>";
+
+  revision "2016-11-19" {
+    description "Mapping resolution service for the virtualizer";
+  }
+
+  grouping object{
+    leaf object {
+      type leafref {
+	path "";
+      }
+  }
+
+  grouping mapping{
+    uses object;
+    container target {
+      uses object;
+      leaf domain {
+      type string;
+      }
+    }
+  }
+  
+  container mappings {
+    list mapping{
+      key "object";
+      uses mapping;
+    }
+  }
+}
