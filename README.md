@@ -5,7 +5,8 @@ The Abstracted Network Inventory (ANI) component proactively constructs multiple
 ## 1. LNI Generation
 
 ![N|Solid](./figures/lni-gen.jpg)
-*Figure 1: Broker-assisted Multi-operator Network Architecture*
+
+*Figure 1: Logical Network Inventory (LNI) generation.*
 
 **INPUTS:**
 - (1) Network services requirements from a catalog.
@@ -24,8 +25,9 @@ G<sub>i</sub> = (V<sub>i</sub>, E<sub>i</sub>, **LNI<sub>i</sub>**), where **LNI
 Given a service request G<sub>s</sub> = (V<sub>s</sub>, E<sub>s</sub>) and a network inventory G<sub>i</sub> = (V<sub>i</sub>, E<sub>i</sub>, LNI<sub>i</sub>), our objective is to determine a LNI graph L<sub>l</sub> ∈ LNI<sub>i</sub> optimized for the service requirements in terms of vertex and edge constraints. We illustrate our problem statement with an example given in Figure 2.
 
 ![N|Solid](./figures/net-model.jpg)
-*Figure 1: Logical Network Inventory (LNI) generation.*
 
+*Figure 2: An example of Network Service & Network Inventory
+& Logical Network Inventory (LNI).*
 
 The left side of this figure shows two network services, where the numbers in rectangles represent requested CPU capacity, and the numbers near the links represent required bandwidth capacity. The network service 1 (ns1) connects two NFs (nf1 and nf2) with 45 units of bandwidth on the edge between them. The network service 2 (ns2) requires the bandwidth 5 over the edge (nf2, nf4) and 15 units over the edge (nf3, nf5), and the CPU resources 60, 70, 65 at NFs nodes, nf3, nf4, and nf5, respectively.
 
