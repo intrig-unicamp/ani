@@ -47,22 +47,20 @@ The primary objective here is to design three algorithms that efficiently create
 
 ### 4.1 LNI Quality Evaluation
 
-#### 4.1.1 Start and run the entire environment
+#### 4.1.1 Node and Edge reduction
 ```sh
 $ cd lni-quality/
+$ sudo python virt_gen.py
+```
+
+#### 4.1.2 Average degree
+```sh
+$ cd lni-quality-vnf/
 $ sudo python virt_gen_vnf.py
 ```
 
-#### 4.1.2 TBD ...
-...
-
 ### 4.2 LNI impact on service provisioning time
-
-#### 4.2.1 Start and run the entire environment
 ```sh
 $ cd lni-time-save/
 $ sudo virt_gen_vnf_topo.py
 ```
-
-#### 4.2.2 TBD ...
-...
